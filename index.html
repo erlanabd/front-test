@@ -1,11 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Top Wrap -->
+    <section class="top-wrap">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <nav class="header__navbar">
+            <div class="header__logo-wrap">
+              <a href="#">
+                <img src="./assets/images/logo.svg" alt="header-logo" />
+              </a>
+            </div>
+            <ul class="header__nav-list">
+              <li class="header__nav-list__item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="header__nav-list__item">
+                <a href="#">Продукция</a>
+              </li>
+              <li class="header__nav-list__item">
+                <a href="#">Услуга</a>
+              </li>
+              <li class="header__nav-list__item">
+                <a href="#">О компании</a>
+              </li>
+              <li class="header__nav-list__item">
+                <a href="#">Вакансии</a>
+              </li>
+              <li class="header__nav-list__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- Promo -->
+      <div class="promo">
+        <div class="container">
+          <div class="promo__content">
+            <h2 class="main-title promo__main-title">
+              Нашу продукцию выбирают лидеры ведущих отраслей по всему миру
+            </h2>
+            <p class="description promo__description">
+              Помимо широкого ассортимента металлических изделий, мы предлагаем
+              клиентам быструю доставку продукции. Сократили бюрократические
+            </p>
+          </div>
+          <div class="promo__btns">
+            <button class="btn-light promo__btn promo__btn-price">
+              <a class="link" href="#">Скачать прайс-лист</a>
+            </button>
+            <button class="promo__btn promo__btn-partner">
+              <a class="link" href="#">Стать партнером</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Banner Slider -->
+      <section class="banner-slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/banner-slider.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/banner-slider.png" alt="" />
+            </div>
+
+            <div class="swiper-slide">
+              <img src="./assets/images/banner-slider.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+    </section>
+    <!-- Products -->
+    <section class="products">
+      <div class="container">
+        <div class="products__title-wrap">
+          <h2 class="main-title products__main-title">Продукция</h2>
+          <button class="products__btn">
+            <span class="products__btn-text">Подробнее</span>
+            <i class="products__btn-icon"></i>
+          </button>
+        </div>
+        <div class="slider-container">
+          <div class="swipers">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Company -->
+    <section class="about-company">
+      <div class="container">
+        <div class="content-wrap">
+          <div class="content">
+            <div class="title-wrap">
+              <h2 class="main-title content__title">О компании</h2>
+              <p class="content__description">
+                Металл Торг Сервис работает на рынке металлопроката Кыргызстана
+                с 2012 года. За прошедшие 7 лет сделано многое – на сегодняшний
+                день компания входит в четверку крупнейших в Республике
+                поставщиков металла различных видов и форм.
+              </p>
+              <p class="content__description">
+                Помимо широкого ассортимента металлических изделий, мы
+                предлагаем клиентам быструю доставку продукции. Сократили
+                бюрократические проволочки к минимуму – заказчик получает
+                металлопрокат в кратчайшие сроки и по выгодной цене.
+              </p>
+              <p class="content__description">
+                На сегодняшний день в компании заняты 50 человек. Из них всего 4
+                менеджера. Они работают напрямую с клиентами, за счет чего можно
+                с уверенностью сказать – у нас самые короткие сроки поставки
+                металлопроката в Кыргызстане.
+              </p>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <img
+              class="img"
+              src="./assets/images/about-company.png"
+              alt="about-company"
+            />
+          </div>
+        </div>
+        <div class="advantages-wrap">
+          <ul class="advantages-list">
+            <div class="advantages-list__item-wrap">
+              <li class="advantages-list__item">
+                <i class="icon gost-icon"></i>
+                <span class="text">Полное соответствие ГОСТУ</span>
+              </li>
+              <li class="advantages-list__item">
+                <i class="icon certificate-icon"></i>
+                <span class="text">Вся продукция сертифицирована</span>
+              </li>
+            </div>
+            <div class="advantages-list__item-wrap">
+              <li class="advantages-list__item">
+                <i class="icon stock-icon"></i>
+                <span class="text">Собственные склады</span>
+              </li>
+              <li class="advantages-list__item">
+                <i class="icon production-icon"></i>
+                <span class="text">Собственное производство</span>
+              </li>
+            </div>
+            <div class="advantages-list__item-wrap">
+              <li class="advantages-list__item">
+                <i class="icon price-icon"></i>
+                <span class="text">Низкие цены</span>
+              </li>
+              <li class="advantages-list__item">
+                <i class="icon payment-icon"></i>
+                <span class="text">Возможность отсрочки платяжа</span>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="gray-box"></div>
+    </section>
+    <!-- Services -->
+    <section class="services">
+      <div class="container">
+        <h2 class="main-title services__title">Услуги</h2>
+        <div class="services__card-list">
+          <div class="services__card-list__item">
+            <div class="content">
+              <h5 class="title">Резка метала</h5>
+              <p class="description">
+                Резка металла подразделяется на несколько видов: термическая,
+                ленточно-пильная, газокислородная, плазменная, лазерная,
+                гидроабразивная. От того, каким способом порезан металл, зависит
+                специфика дальнейших работ.
+              </p>
+            </div>
+            <button class="btn-light btn">
+              <span class="btn-text">Связаться с нами</span>
+              <i class="btn-icon"></i>
+            </button>
+          </div>
+          <div class="services__card-list__item">
+            <div class="content">
+              <h5 class="title">Резка метала</h5>
+              <p class="description">
+                Резка металла подразделяется на несколько видов: термическая,
+                ленточно-пильная, газокислородная, плазменная, лазерная,
+                гидроабразивная. От того, каким способом порезан металл, зависит
+                специфика дальнейших работ.
+              </p>
+            </div>
+            <button class="btn-light btn">
+              <span class="btn-text">Связаться с нами</span>
+              <i class="btn-icon"></i>
+            </button>
+          </div>
+          <div class="services__card-list__item">
+            <div class="content">
+              <h5 class="title">Резка метала</h5>
+              <p class="description">
+                Резка металла подразделяется на несколько видов: термическая,
+                ленточно-пильная, газокислородная, плазменная, лазерная,
+                гидроабразивная. От того, каким способом порезан металл, зависит
+                специфика дальнейших работ.
+              </p>
+            </div>
+            <button class="btn-light btn">
+              <span class="btn-text">Связаться с нами</span>
+              <i class="btn-icon"></i>
+            </button>
+          </div>
+          <div class="services__card-list__item">
+            <div class="content">
+              <h5 class="title">Резка метала</h5>
+              <p class="description">
+                Резка металла подразделяется на несколько видов: термическая,
+                ленточно-пильная, газокислородная, плазменная, лазерная,
+                гидроабразивная. От того, каким способом порезан металл, зависит
+                специфика дальнейших работ.
+              </p>
+            </div>
+            <button class="btn-light btn">
+              <span class="btn-text">Связаться с нами</span>
+              <i class="btn-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="gray-box"></div>
+    </section>
+    <!-- Partners -->
+    <section class="partners">
+      <div class="container">
+        <div class="main">
+          <div class="content">
+            <h2 class="main-title title">Наши Партнеры</h2>
+            <p class="description">
+              <span class="devided-description"
+                >Штрипс – полосы листового металла различной длины и ширины.
+                Чаще всего толщина не превышает 4 мм. Штрипс можно изготовить
+                любого размера – этот факт делает его незаменимым в
+                строительстве и производстве.
+              </span>
+              <span class="devided-description"
+                >Помимо широкого ассортимента металлических изделий, мы
+                предлагаем клиентам быструю доставку продукции.
+              </span>
+              <span class="devided-description"
+                >Сократили бюрократические проволочки к минимуму – заказчик
+                получает металлопрокат в кратчайшие сроки и по выгодной цене.
+              </span>
+            </p>
+          </div>
+          <div class="parters-img">
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-optima.svg"
+                alt="parters-optima"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-bishkekkurulush.svg"
+                alt="partners-bishkekkurulush"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-bishkekpark.svg"
+                alt="partners-bishkekpark"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-dska.svg"
+                alt="partners-dska"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-altynkurulush.svg"
+                alt="partners-altynkurulush"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-elizaveta.svg"
+                alt="partners-elizaveta"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-avangard.svg"
+                alt="partners-avangard"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-alfa.svg"
+                alt="partners-alfa"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-kggroup.svg"
+                alt="partners-kggroup"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-actbuilding.svg"
+                alt="partners-actbuilding"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-aalam.svg"
+                alt="partners-aalam"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-progroup.svg"
+                alt="partners-progroup"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-expostroy.svg"
+                alt="partners-expostroy"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-nurimaratkurulush.svg"
+                alt="partners-nurimaratkurulush"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-odonstroy.svg"
+                alt="partners-odonstroy"
+              />
+            </div>
+            <div class="img-wrap">
+              <img
+                class="img"
+                src="./assets/images/partners-kanatstroy.svg"
+                alt="partners-kanatstroy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gray-box"></div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
 </html>
