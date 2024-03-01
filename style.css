@@ -988,6 +988,10 @@ button {
 
 /* Mobile */
 @media screen and (max-width: 391px) {
+  .container-mobile {
+    max-width: 390px;
+    overflow: hidden;
+  }
   /* Base Styles */
   .container {
     max-width: 330px;
@@ -1123,7 +1127,7 @@ button {
 
   /* Products Start */
   .products {
-    padding: 0;
+    padding: 40px 0 0;
     height: 342px;
     position: relative;
     overflow: hidden;
@@ -1148,7 +1152,7 @@ button {
   }
   .products .swiper-wrapper {
     position: absolute;
-    top: 58px;
+    top: 72px;
     height: auto;
   }
   .products .swiper-wrapper .swiper-slide {
@@ -1183,7 +1187,7 @@ button {
   .products .swipers .swiper-scrollbar {
     display: block;
     position: absolute;
-    bottom: 49px;
+    bottom: 35px;
     width: 190px;
     height: 3px;
     margin-left: 100px;
@@ -1485,8 +1489,6 @@ button {
   /* Map End */
 
   /* Footer Start */
-
-  /* Я тут не успевал , быстро делал очень, код повторяется , из-за того, что торопился */
   .footer {
     display: none;
   }
@@ -1531,19 +1533,58 @@ button {
   .footer-mobile .content .contacts-wrap {
     display: flex;
   }
+  .footer-mobile .content .contacts-wrap .item {
+    display: flex;
+  }
   .footer-mobile .content .contacts-wrap .item.phone {
     margin-right: 77px;
     margin-bottom: 15px;
+  }
+  .footer-mobile .content .contacts-wrap .item.time {
+    display: flex;
+  }
+  .footer-mobile .content .contacts-wrap .item.time .icon {
+    display: block;
+    background: url("./assets/icons/time.svg") center center / contain no-repeat;
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+  }
+  .footer-mobile .content .contacts-wrap .item.phone .icon {
+    display: block;
+    background: url("./assets/icons/telephone.svg") center center / contain
+      no-repeat;
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
   }
   .footer-mobile .content .contacts-wrap .item.phone span {
     display: block;
   }
   .footer-mobile .content .email .item.email {
     margin-bottom: 20px;
+    display: flex;
+  }
+  .footer-mobile .content .email .item.email .icon {
+    display: block;
+    background: url("./assets/icons/inbox.svg") center center / contain
+      no-repeat;
+    width: 17px;
+    height: 15px;
+    margin-right: 10px;
   }
   .footer-mobile .content .email .item.location {
+    display: flex;
     width: 217px;
     height: 57px;
+  }
+  .footer-mobile .content .email .item.location .icon {
+    display: block;
+    background: url("./assets/icons/location.svg") center center / contain
+      no-repeat;
+    min-width: 15px;
+    height: 15px;
+    margin-right: 10px;
   }
   .footer-mobile .all-rights {
     position: absolute;
