@@ -1455,8 +1455,8 @@ button {
     margin-top: 0;
   }
   #map-wrap {
-    width: 330px;
-    height: 159px;
+    max-width: 330px;
+    max-height: 159px;
     margin-top: 14px;
     margin-bottom: 0;
   }
@@ -1485,6 +1485,8 @@ button {
   /* Map End */
 
   /* Footer Start */
+
+  /* Я тут не успевал , быстро делал очень, код повторяется , из-за того, что торопился */
   .footer {
     display: none;
   }
@@ -1493,18 +1495,61 @@ button {
     height: 337px;
     background: #231f20;
     position: relative;
+    font-size: 14px;
+    overflow: hidden;
   }
+
   .footer-img {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
   }
   .footer-img .img {
+    position: absolute;
+    top: -48px;
+    right: -62px;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    opacity: 0.2;
+  }
+  .footer-mobile .content {
+    position: absolute;
+    top: 22px;
+    left: 32px;
+    z-index: 2;
+    color: #f5f5f5;
+  }
+  .footer-mobile .content .title {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+  .footer-mobile .content .contacts-wrap {
+    display: flex;
+  }
+  .footer-mobile .content .contacts-wrap .item.phone {
+    margin-right: 77px;
+    margin-bottom: 15px;
+  }
+  .footer-mobile .content .contacts-wrap .item.phone span {
+    display: block;
+  }
+  .footer-mobile .content .email .item.email {
+    margin-bottom: 20px;
+  }
+  .footer-mobile .content .email .item.location {
+    width: 217px;
+    height: 57px;
+  }
+  .footer-mobile .all-rights {
+    position: absolute;
+    left: 99px;
+    bottom: 33px;
+    color: #f5f5f5;
   }
   /* Footer End */
 }
