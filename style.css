@@ -1204,6 +1204,7 @@ button {
     width: 190px;
     height: 3px;
     margin-left: 100px;
+    z-index: 3;
   }
   .products .swipers .swiper-scrollbar.swiper-scrollbar-lock {
     display: block !important;
