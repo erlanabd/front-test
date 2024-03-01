@@ -1474,9 +1474,37 @@ button {
     height: 5px;
   }
   .map-img .title-wrap .title {
-    font-weight: 600;
-    font-size: 10px;
-    color: #231f20;
+    font-size: 2px;
+  }
+  .map-img .description {
+    margin-top: 2.7px;
+  }
+  .map-img .description span {
+    font-size: 3px;
   }
   /* Map End */
+
+  /* Footer Start */
+  .footer {
+    display: none;
+  }
+
+  .footer-mobile {
+    height: 337px;
+    background: #231f20;
+    position: relative;
+  }
+  .footer-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .footer-img .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Footer End */
 }
