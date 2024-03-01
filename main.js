@@ -12,11 +12,11 @@ const swiper = new Swiper(".swiper", {
 const swipers = new Swiper(".swipers", {
   direction: "horizontal",
   slidesPerView: 4,
-  spaceBetween: 30,
 
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
+    hide: false,
   },
 });
 
@@ -25,31 +25,37 @@ const PRODUCTS_SWIPER_DATA = [
     id: 0,
     img: "product-slider-first.png",
     title: "Стальные листы",
+    description: "Помимо широкого ассортимента металлических изделий, мы...",
   },
   {
     id: 1,
     img: "product-slider-second.png",
     title: "Стальные листы",
+    description: "Помимо широкого ассортимента металлических изделий, мы...",
   },
   {
     id: 2,
     img: "product-slider-first.png",
     title: "Стальные листы",
+    description: "Помимо широкого ассортимента металлических изделий, мы...",
   },
   {
     id: 3,
     img: "product-slider-second.png",
     title: "Стальные листы",
+    description: "Помимо широкого ассортимента металлических изделий, мы...",
   },
   {
     id: 4,
     img: "product-slider-first.png",
     title: "Стальные листы",
+    description: "Помимо широкого ассортимента металлических изделий, мы...",
   },
   {
     id: 5,
     img: "product-slider-second.png",
     title: "Стальные листы",
+    description: "Помимо широкого ассортимента металлических изделий, мы...",
   },
 ];
 
@@ -59,6 +65,7 @@ PRODUCTS_SWIPER_DATA.forEach((slide, idx) => {
   slider.innerHTML = `
   <div class="slide">
   <h5 class="slide-title">${slide.title}</h5>
+  <p class="slide-description">${slide.description}</p>
 </div>
 <img
   class="slide-image"

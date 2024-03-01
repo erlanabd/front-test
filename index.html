@@ -19,6 +19,23 @@
   <body>
     <!-- Top Wrap -->
     <section class="top-wrap">
+      <!-- iPhone View -->
+      <div class="mobile-view">
+        <img src="./assets/icons/iphoneviewmobile.svg" alt="mobileview" />
+      </div>
+      <!-- Mobile header -->
+      <div class="mobile-header">
+        <div class="container">
+          <div class="logo-wrap">
+            <img
+              class="img"
+              src="./assets/icons/mobile-header-logo.svg"
+              alt="mobile-header-logo"
+            />
+            <i class="burger-icon"></i>
+          </div>
+        </div>
+      </div>
       <!-- Header -->
       <header class="header">
         <div class="container">
@@ -62,6 +79,9 @@
               Помимо широкого ассортимента металлических изделий, мы предлагаем
               клиентам быструю доставку продукции. Сократили бюрократические
             </p>
+            <p class="description promo__description mobile-promo__description">
+              Мы предлагаем клиентам быструю доставку продукции.
+            </p>
           </div>
           <div class="promo__btns">
             <button class="btn-light promo__btn promo__btn-price">
@@ -73,6 +93,12 @@
           </div>
         </div>
       </div>
+      <!-- Mobile Banner Start-->
+      <div class="mobile-banner">
+        <img class="img" src="./assets/images/mobile-banner.svg" alt="" />
+      </div>
+      <!-- Mobile Banner End-->
+
       <!-- Banner Slider -->
       <section class="banner-slider">
         <div class="swiper">
@@ -105,7 +131,7 @@
         <div class="slider-container">
           <div class="swipers">
             <div class="swiper-wrapper"></div>
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-scrollbar" style="display: block"></div>
           </div>
         </div>
       </div>
@@ -117,7 +143,7 @@
           <div class="content">
             <div class="title-wrap">
               <h2 class="main-title content__title">О компании</h2>
-              <p class="content__description">
+              <p class="content__description first-description">
                 Металл Торг Сервис работает на рынке металлопроката Кыргызстана
                 с 2012 года. За прошедшие 7 лет сделано многое – на сегодняшний
                 день компания входит в четверку крупнейших в Республике
@@ -146,7 +172,37 @@
           </div>
         </div>
         <div class="advantages-wrap">
-          <ul class="advantages-list">
+          <ul class="advantages-list-mobile">
+            <div class="advantages-list__item-wrap-mobile">
+              <li class="advantages-list__item">
+                <i class="icon gost-icon"></i>
+                <span class="text">Полное соответствие ГОСТУ</span>
+              </li>
+              <li class="advantages-list__item">
+                <i class="icon certificate-icon"></i>
+                <span class="text">Вся продукция сертифицирована</span>
+              </li>
+              <li class="advantages-list__item">
+                <i class="icon payment-icon"></i>
+                <span class="text">Возможность отсрочки платяжа</span>
+              </li>
+            </div>
+            <div class="advantages-list__item-wrap-mobile">
+              <li class="advantages-list__item">
+                <i class="icon stock-icon"></i>
+                <span class="text">Собственные склады</span>
+              </li>
+              <li class="advantages-list__item">
+                <i class="icon production-icon"></i>
+                <span class="text">Собственное производство</span>
+              </li>
+              <li class="advantages-list__item">
+                <i class="icon price-icon"></i>
+                <span class="text">Низкие цены</span>
+              </li>
+            </div>
+          </ul>
+          <ul class="advantages-list-desktop">
             <div class="advantages-list__item-wrap">
               <li class="advantages-list__item">
                 <i class="icon gost-icon"></i>
@@ -232,7 +288,7 @@
               <i class="btn-icon"></i>
             </button>
           </div>
-          <div class="services__card-list__item">
+          <div class="services__card-list__item last-item">
             <div class="content">
               <h5 class="title">Резка метала</h5>
               <p class="description">
@@ -273,6 +329,23 @@
                 получает металлопрокат в кратчайшие сроки и по выгодной цене.
               </span>
             </p>
+          </div>
+          <div class="partners-img-mobile">
+            <img
+              class="img"
+              src="./assets/images/optima-mobile-partner.svg"
+              alt="optima"
+            />
+            <img
+              class="img"
+              src="./assets/images/bishkekkurulush-mobile-partner.svg"
+              alt="bishkekkurulush-mobile-partner"
+            />
+            <img
+              class="img"
+              src="./assets/images/bishkekpark-mobile-partner.svg"
+              alt="bishkekpark-mobile-partner"
+            />
           </div>
           <div class="parters-img">
             <div class="img-wrap">
@@ -397,6 +470,10 @@
       <div class="container">
         <div class="content-box">
           <h2 class="main-title title">Для партнеров</h2>
+          <h2 class="main-title title">Наши партнеры</h2>
+          <form class="">
+
+          </form>
           <form class="form">
             <div class="select-wrap">
               <select class="input select">
